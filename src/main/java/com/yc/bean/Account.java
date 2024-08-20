@@ -12,7 +12,7 @@ import java.io.Serializable;
 @ManagedResource(objectName = "com.yc:name=Account")
 @Component
 public class Account implements Serializable {
-    private Integer accountid;
+    private Integer accountId;
     private Double balance;
     private String email;
 
@@ -21,13 +21,13 @@ public class Account implements Serializable {
 
     @ManagedAttribute
     public Integer getAccountid() {
-        return accountid;
+        return accountId;
     }
 
     @ManagedOperation
     @ManagedOperationParameter(name = "accountid", description = "账户id")
     public void setAccountid(Integer accountid) {
-        this.accountid = accountid;
+        this.accountId = accountid;
     }
     @ManagedAttribute
     public Double getBalance() {

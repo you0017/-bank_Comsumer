@@ -1,30 +1,22 @@
-package com.yc.service;
+package com.yc.service.impl;
 
 import com.yc.bean.Account;
-import com.yc.bean.MessageBean;
+import com.yc.service.VelocityTemplateBiz;
+import com.yc.util.MailBiz;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
-import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.StringWriter;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-@Component
-public class VelocityTemplateBizImpl {
-
-
-    @Autowired
-    private MailBiz mailBiz;
+@Service
+public class VelocityTemplateBizImpl implements VelocityTemplateBiz {
 
     @Autowired
     private VelocityContext context;

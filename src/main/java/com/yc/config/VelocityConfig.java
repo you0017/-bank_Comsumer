@@ -1,4 +1,4 @@
-package com.yc;
+package com.yc.config;
 
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;

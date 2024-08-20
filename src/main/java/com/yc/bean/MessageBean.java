@@ -12,7 +12,7 @@ import lombok.ToString;
 public class MessageBean {
     private Account account;
     private double money;
-    private Integer toAccountid;
+    private Integer toAccountId;
     private String email;
     private String opType;
 }

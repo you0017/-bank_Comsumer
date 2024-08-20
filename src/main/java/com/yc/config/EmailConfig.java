@@ -1,4 +1,4 @@
-package com.yc;
+package com.yc.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,6 @@ import java.util.Properties;
 
 //email服务
 @Configuration
-@PropertySource(value = "classpath:email.properties")
 public class EmailConfig {
     /**
      * 托管javaMailSender类，用于邮件发送
