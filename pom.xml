@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.2</version>
+        <version>3.2.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yc</groupId>
-    <artifactId>bank_Comsumer</artifactId>
+    <artifactId>bank_Consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bank_Comsumer</name>
-    <description>bank_Comsumer</description>
+    <name>bank_Consumer</name>
+    <description>bank_Consumer</description>
 
     <properties>
         <java.version>17</java.version>
